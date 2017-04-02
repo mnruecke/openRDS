@@ -1,18 +1,22 @@
 /*--------------------------------------------------------------------------------
-	RDS Simulation Parameters
+	RDS Simulation Parameters:
 
-	1) RDS system
-	2) particle system
-	3) simulation parameters
+	1) Spectrometer properties
+	2) Particle system
+	3) Simulation parameters
 
 --------------------------------------------------------------------------------*/
 
 {
-	// Field parameters: -
+	// 1) Spectrometer properties
 	B_rot	1.05
 	B_off	0.1
 
 	OM_x	1
 	OM_y	1.01
 	OM_0	500
+
+	// 2) Particle system
+
+	// 3) Simulation parameters
 }
