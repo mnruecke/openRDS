@@ -9,14 +9,24 @@
 
 {
 	// 1) Spectrometer properties
-	B_rot	1.05
-	B_off	0.1
+	Bx_rot	1.0
+	By_rot	1.05
 
-	OM_x	1
-	OM_y	1.01
-	OM_0	500
+	Bx_off	0.1
+	By_off	0.0
+	Bz_off	0.0
+
+	om_0	1
+	om_x	0.01
+	om_y	0.0
 
 	// 2) Particle system
+	temperature		298	
+	hydDiameter		100
+	viscosity		0.001
 
 	// 3) Simulation parameters
+	StartTime	0.0
+	EndTime		300.0
+	DeltaTime	0.01
 }

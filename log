@@ -1,0 +1,219 @@
+config.cpp: In function ‘void read_config(rdsSystem*)’:
+config.cpp:19:12: error: no match for ‘operator>>’ (operand types are ‘std::istream {aka std::basic_istream<char>}’ and ‘const char*’)
+   std::cin >> (*sysParams).paramFile.c_str();
+            ^
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:168:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+       operator>>(bool& __n)
+       ^
+/usr/include/c++/5/istream:168:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid initialization of non-const reference of type ‘bool&’ from an rvalue of type ‘bool’
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:172:7: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>] <near match>
+       operator>>(short& __n);
+       ^
+/usr/include/c++/5/istream:172:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid conversion from ‘const char*’ to ‘short int’ [-fpermissive]
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+config.cpp:19:43: error: cannot bind rvalue ‘(short int)((long int)sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >())’ to ‘short int&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:175:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+       operator>>(unsigned short& __n)
+       ^
+/usr/include/c++/5/istream:175:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid conversion from ‘const char*’ to ‘short unsigned int’ [-fpermissive]
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+config.cpp:19:43: error: cannot bind rvalue ‘(short unsigned int)((long int)sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >())’ to ‘short unsigned int&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:179:7: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>] <near match>
+       operator>>(int& __n);
+       ^
+/usr/include/c++/5/istream:179:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid conversion from ‘const char*’ to ‘int’ [-fpermissive]
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+config.cpp:19:43: error: cannot bind rvalue ‘(int)((long int)sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >())’ to ‘int&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:182:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+       operator>>(unsigned int& __n)
+       ^
+/usr/include/c++/5/istream:182:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid conversion from ‘const char*’ to ‘unsigned int’ [-fpermissive]
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+config.cpp:19:43: error: cannot bind rvalue ‘(unsigned int)((long int)sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >())’ to ‘unsigned int&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:186:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+       operator>>(long& __n)
+       ^
+/usr/include/c++/5/istream:186:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid conversion from ‘const char*’ to ‘long int’ [-fpermissive]
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+config.cpp:19:43: error: cannot bind rvalue ‘(long int)sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >()’ to ‘long int&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:190:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+       operator>>(unsigned long& __n)
+       ^
+/usr/include/c++/5/istream:190:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid conversion from ‘const char*’ to ‘long unsigned int’ [-fpermissive]
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+config.cpp:19:43: error: cannot bind rvalue ‘(long unsigned int)sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >()’ to ‘long unsigned int&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:195:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+       operator>>(long long& __n)
+       ^
+/usr/include/c++/5/istream:195:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid conversion from ‘const char*’ to ‘long long int’ [-fpermissive]
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+config.cpp:19:43: error: cannot bind rvalue ‘(long long int)sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >()’ to ‘long long int&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:199:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+       operator>>(unsigned long long& __n)
+       ^
+/usr/include/c++/5/istream:199:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid conversion from ‘const char*’ to ‘long long unsigned int’ [-fpermissive]
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+config.cpp:19:43: error: cannot bind rvalue ‘(long long unsigned int)sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >()’ to ‘long long unsigned int&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:235:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>] <near match>
+       operator>>(void*& __p)
+       ^
+/usr/include/c++/5/istream:235:7: note:   conversion of argument 1 would be ill-formed:
+config.cpp:19:43: error: invalid conversion from ‘const void*’ to ‘void*’ [-fpermissive]
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+config.cpp:19:43: error: cannot bind rvalue ‘(void*)sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >()’ to ‘void*&’
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:120:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(__istream_type& (*__pf)(__istream_type&))
+       ^
+/usr/include/c++/5/istream:120:7: note:   no known conversion for argument 1 from ‘const char*’ to ‘std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&) {aka std::basic_istream<char>& (*)(std::basic_istream<char>&)}’
+/usr/include/c++/5/istream:124:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator>>(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/5/istream:124:7: note:   no known conversion for argument 1 from ‘const char*’ to ‘std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/5/istream:131:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(ios_base& (*__pf)(ios_base&))
+       ^
+/usr/include/c++/5/istream:131:7: note:   no known conversion for argument 1 from ‘const char*’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/5/istream:214:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(float& __f)
+       ^
+/usr/include/c++/5/istream:214:7: note:   no known conversion for argument 1 from ‘const char*’ to ‘float&’
+/usr/include/c++/5/istream:218:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(double& __f)
+       ^
+/usr/include/c++/5/istream:218:7: note:   no known conversion for argument 1 from ‘const char*’ to ‘double&’
+/usr/include/c++/5/istream:222:7: note: candidate: std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]
+       operator>>(long double& __f)
+       ^
+/usr/include/c++/5/istream:222:7: note:   no known conversion for argument 1 from ‘const char*’ to ‘long double&’
+/usr/include/c++/5/istream:259:7: note: candidate: std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+       operator>>(__streambuf_type* __sb);
+       ^
+/usr/include/c++/5/istream:259:7: note:   no known conversion for argument 1 from ‘const char*’ to ‘std::basic_istream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+/usr/include/c++/5/istream:808:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)
+     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+     ^
+/usr/include/c++/5/istream:808:5: note:   template argument deduction/substitution failed:
+config.cpp:19:43: note:   cannot convert ‘sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >()’ (type ‘const char*’) to type ‘signed char*’
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:803:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+     ^
+/usr/include/c++/5/istream:803:5: note:   template argument deduction/substitution failed:
+config.cpp:19:43: note:   cannot convert ‘sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >()’ (type ‘const char*’) to type ‘unsigned char*’
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:761:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)
+     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+     ^
+/usr/include/c++/5/istream:761:5: note:   template argument deduction/substitution failed:
+config.cpp:19:43: note:   cannot convert ‘sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >()’ (type ‘const char*’) to type ‘signed char&’
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+In file included from /usr/include/c++/5/iostream:40:0,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/istream:756:5: note: candidate: template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)
+     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+     ^
+/usr/include/c++/5/istream:756:5: note:   template argument deduction/substitution failed:
+config.cpp:19:43: note:   cannot convert ‘sysParams->rdsSystem::paramFile.std::__cxx11::basic_string<_CharT, _Traits, _Alloc>::c_str<char, std::char_traits<char>, std::allocator<char> >()’ (type ‘const char*’) to type ‘unsigned char&’
+   std::cin >> (*sysParams).paramFile.c_str();
+                                           ^
+In file included from /usr/include/c++/5/istream:934:0,
+                 from /usr/include/c++/5/iostream:40,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/bits/istream.tcc:923:5: note: candidate: template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+     ^
+/usr/include/c++/5/bits/istream.tcc:923:5: note:   template argument deduction/substitution failed:
+config.cpp:19:44: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘const char*’)
+   std::cin >> (*sysParams).paramFile.c_str();
+                                            ^
+In file included from /usr/include/c++/5/istream:934:0,
+                 from /usr/include/c++/5/iostream:40,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/bits/istream.tcc:955:5: note: candidate: template<class _CharT2, class _Traits2> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT2*)
+     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+     ^
+/usr/include/c++/5/bits/istream.tcc:955:5: note:   template argument deduction/substitution failed:
+config.cpp:19:44: note:   deduced conflicting types for parameter ‘_CharT2’ (‘char’ and ‘const char’)
+   std::cin >> (*sysParams).paramFile.c_str();
+                                            ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from config.hpp:1,
+                 from config.cpp:2:
+/usr/include/c++/5/bits/basic_string.tcc:1441:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator>>(basic_istream<_CharT, _Traits>& __in,
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1441:5: note:   template argument deduction/substitution failed:
+config.cpp:19:44: note:   mismatched types ‘std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’ and ‘const char*’
+   std::cin >> (*sysParams).paramFile.c_str();
+                                            ^
+make: *** [config.o] Error 1
