@@ -27,16 +27,9 @@ int main(int argc, char* argv[])
 	rdsSys_1.paramFile = "rdsSystemParams";
 	read_config( &rdsSys_1 );
 	test_config( &rdsSys_1 );
-	
-	cout << endl << endl << dummy_fun2(5,6) << endl << endl;
 
-    mat X(4,5,fill::ones);
-    cout << "X has " << X.n_cols << " columns" << endl;
-    
-    mat B; B.randu(4,5);
-    cout << endl << B << endl;
-    cout << endl << pinv(B) << endl;
-    cout << endl << B * pinv(B) << endl;
+    core_draft1(3,7);
+
     
     
 }

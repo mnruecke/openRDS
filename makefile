@@ -4,6 +4,7 @@ LDFLAGS = -g -larmadillo -llapack -lblas
 
 OBJ = openRDS.o rds.o config.o
 BIN = openRDS
+LOG = results.dat
 
 prog: $(OBJ) 
 	$(CPP) -o $(BIN) $(OBJ) $(LDFLAGS)
@@ -13,4 +14,4 @@ prog: $(OBJ)
 
 .PHONY: clean
 clean:
-	rm -rf $(BIN) $(OBJ)
+	rm -rf $(BIN) $(OBJ) $(LOG)

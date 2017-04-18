@@ -1,3 +1,8 @@
+// 
+#include <iostream>
+#include <fstream>
+#include <armadillo>
 
 
-double dummy_fun2(double, double);
+void core_draft1(double, double);
+
