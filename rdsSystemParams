@@ -20,6 +20,9 @@
 	om_x	0.01
 	om_y	0.0
 
+	phi_x // TODO: include phase in simulation equation
+	phi_y
+
 	// 2) Particle system
 	temperature		298	
 	hydDiameter		100

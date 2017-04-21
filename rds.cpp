@@ -5,11 +5,15 @@
 /* SDGL implementation:
 
 1.) Euler forward
-    dm/dt = m dn/dt = 1/gamma [ (B x m + w) x m ]
+    dm/dt = m dn/dt = 1/gamma [ (B x m + W) x m ]
+
+					= 1/gamma (B x m) x m	+ 	1/gamma W x m
    
     m(i+1) = m(i) + dm(i)
 
-
+    {Bx, By, Bz}(i) = {Bx_rot * sin( (om_0 + om_x) * i) + Bx_off,
+					   By_rot * cos( (om_0 + om_y) * i) + By_off,
+										Bz_off}
 */
 
 
@@ -17,7 +21,7 @@
 
 int timePoints = 100;
 int dimM = 3;
-float brownian = 0.5;
+float brownian = 0.3;
 
 void core_draft1(double num_a,double num_b)
 {
@@ -27,11 +31,17 @@ void core_draft1(double num_a,double num_b)
 
 	// External magnetic field
 	arma::mat B( dimM, timePoints);
+	arma::vec b_i; 
+	for( int i=0; i<timePoints; i++ )
+	{
+		b_i << 1 << 1 << 1 << arma::endr;
+		B.col(i) = b_i;  
+	}
 
 	// Magnetic moment
     arma::mat M( dimM, timePoints, arma::fill::zeros);
-    arma::mat aa(3,1,arma::fill::eye);
-	M.col(0) = aa;
+	arma::vec m_0(3); m_0 << 1 << 0 << 0 << arma::endr;
+	M.col(0) = m_0;
 
 	// Time evolution ( magnetic "point-charge" moving on spherical surface)
 	for( int i=0; i<timePoints-1; i++)

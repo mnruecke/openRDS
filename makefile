@@ -3,7 +3,7 @@ CPPFLAGS = -Wall -g -O3 -c
 LDFLAGS = -g -larmadillo -llapack -lblas
 
 OBJ = openRDS.o rds.o config.o
-BIN = openRDS
+BIN = openRDS a.out
 LOG = results.dat
 
 prog: $(OBJ) 
