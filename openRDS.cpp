@@ -15,7 +15,6 @@ vi compile-and-run:
 #include <armadillo>
 
 #include "rds.hpp"
-#include "config.hpp"
 
 using namespace std;
 using namespace arma;
@@ -28,7 +27,7 @@ int main(int argc, char* argv[])
 	read_config( &rdsSys_1 );
 	test_config( &rdsSys_1 );
 
-    core_draft1(3,7);
+    core_draft1( &rdsSys_1 );
 
     
     

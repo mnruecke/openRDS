@@ -9,19 +9,19 @@
 
 {
 	// 1) Spectrometer properties
-	Bx_rot	1.0
-	By_rot	1.05
+	Bx_rot	0.15
+	By_rot	0.1505
 
-	Bx_off	0.1
+	Bx_off	0.01
 	By_off	0.0
 	Bz_off	0.0
 
-	om_0	1
+	om_0	0.2
 	om_x	0.01
 	om_y	0.0
 
-	phi_x // TODO: include phase in simulation equation
-	phi_y
+	phi_x	0.0 // phi -> [rad]/M_PI
+ 	phi_y   0.5 // TODO: include phase in simulation equation
 
 	// 2) Particle system
 	temperature		298	

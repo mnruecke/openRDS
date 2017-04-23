@@ -1,8 +1,12 @@
 // 
+#include <cmath>
 #include <iostream>
 #include <fstream>
 #include <armadillo>
 
+#include "config.hpp"
 
-void core_draft1(double, double);
+#define DIMSYS 3
+
+void core_draft1( rdsSystem * );
 

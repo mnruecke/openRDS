@@ -49,6 +49,10 @@ void read_config( rdsSystem *sysParams )
 			config_file >> (*sysParams).om_x;
 		if( str_elem == "om_y" && insideBlock)
 			config_file >> (*sysParams).om_y;
+		if( str_elem == "phi_x" && insideBlock)
+			config_file >> (*sysParams).phi_x;
+		if( str_elem == "phi_y" && insideBlock)
+			config_file >> (*sysParams).phi_y;
 		
 		// Particle System
 		if( str_elem == "temperature" && insideBlock)
@@ -88,6 +92,10 @@ void test_config( rdsSystem *rdsParams )
 	std::cout << std::endl << "om_0: \t" << (*rdsParams).om_0;
 	std::cout << std::endl << "om_x: \t" << (*rdsParams).om_x;
 	std::cout << std::endl << "om_y: \t" << (*rdsParams).om_y;
+	std::cout << std::endl << std::endl;
+
+	std::cout << std::endl << "phi_x: \t" << (*rdsParams).phi_x;
+	std::cout << std::endl << "phi_y: \t" << (*rdsParams).phi_y;
 	std::cout << std::endl << std::endl;
 
 	// Particle System

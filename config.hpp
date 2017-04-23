@@ -18,6 +18,9 @@ struct rdsSystem
 	float om_x;
 	float om_y;
 
+	float phi_x;
+	float phi_y;
+
 	// Particle System
 	float temperature;
 	float hydDiameter;
